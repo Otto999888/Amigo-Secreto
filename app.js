@@ -24,12 +24,12 @@ let listaAmigos = [];
             const nombre = inputNombre.value.trim();
             console.log(nombre);
                                      
-        if (inputNombre=="") {
+        if (nombre=="") {
             alert("No olvides agregar un nombre");
             asignarTextoElemento('h2',`No olvides agregar un nombre`);
         }
-        else if (listaAmigos.includes(inputNombre) ){
-            asignarTextoElemento('h2',`El nombre ${inputNombre} Ya se encuentra. Digite Otro nombre`);
+        else if (listaAmigos.includes(nombre) ){
+            asignarTextoElemento('h2',`El nombre ${nombre} Ya se encuentra. Digite Otro nombre`);
     
         }   
         else{
